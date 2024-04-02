@@ -30,7 +30,7 @@ jobs:
           IP_SERVER: ${{ secrets.IP_SERVER }}
           PORT_SERVER: ${{ secrets.PORT_SERVER }}
         run: |
-          echo ${{PORT_SERVER}}
+          echo "%PORT_SERVER%"
           echo secrets configured
 
       # Runs a single command using the runners shell
